@@ -1,7 +1,6 @@
 package cellular
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -36,7 +35,6 @@ func Islive(p int, a []int) int {
 			sum += s
 		}
 	}
-	//	fmt.Println(state, sum)
 	if ((state == 1) && (sum == 2 || sum == 3)) || (state == 0 && sum == 3) {
 		return 1
 	} else {
@@ -56,7 +54,6 @@ func LiveCell(in []int) []int {
 			}
 		}
 		in = out
-		fmt.Println(in)
 		if changed == 0 {
 			break
 		}
